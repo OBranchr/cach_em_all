@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/obranchr/cach_em_all"
   s.summary     = "Fragment cache helpers for rails."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files = Dir["lib/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/*.rb"]
 
   s.add_dependency "rails", "~> 4.0.0"
 
