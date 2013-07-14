@@ -1,0 +1,27 @@
+<h1>Listing arbitrary_records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @arbitrary_records.each do |arbitrary_record| %>
+      <tr>
+        <td><%= arbitrary_record.name %></td>
+        <td><%= link_to 'Show', arbitrary_record %></td>
+        <td><%= link_to 'Edit', edit_arbitrary_record_path(arbitrary_record) %></td>
+        <td><%= link_to 'Destroy', arbitrary_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Arbitrary record', new_arbitrary_record_path %>
