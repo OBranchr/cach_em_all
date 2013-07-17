@@ -11,13 +11,17 @@
   </thead>
 
   <tbody>
-    <% @arbitrary_records.each do |arbitrary_record| %>
-      <tr>
-        <td><%= arbitrary_record.name %></td>
-        <td><%= link_to 'Show', arbitrary_record %></td>
-        <td><%= link_to 'Edit', edit_arbitrary_record_path(arbitrary_record) %></td>
-        <td><%= link_to 'Destroy', arbitrary_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <%= cache ArbitraryRecord do %>
+      <% @arbitrary_records.each do |arbitrary_record| %>
+        <%= cache arbitrary_record do %>
+          <tr>
+            <td><%= arbitrary_record.name %></td>
+            <td><%= link_to 'Show', arbitrary_record %></td>
+            <td><%= link_to 'Edit', edit_arbitrary_record_path(arbitrary_record) %></td>
+            <td><%= link_to 'Destroy', arbitrary_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      <% end %>
     <% end %>
   </tbody>
 </table>
