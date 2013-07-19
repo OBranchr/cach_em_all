@@ -8,7 +8,7 @@ Add the gem to your gemfile
 
 ```ruby
 # Gemfile
-gem 'cach_em_all', :git => 'git://github.com/obranchr/cach_em_all.git'
+gem 'cach_em_all'
 ```
 
 Then run `bundle install`. And you're ready to go.
