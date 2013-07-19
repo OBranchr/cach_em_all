@@ -7,8 +7,6 @@
 
 ### With code
 
-Please note that this repo uses [git-flow](http://danielkummer.github.io/git-flow-cheatsheet/), so use it directives to create new features or hotfixes. 
-
 It's highly appreciated:
 
 * More tests
