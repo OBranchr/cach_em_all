@@ -113,7 +113,7 @@ end
 
 To see what has changed in recent versions of CacheEmAll, see the [CHANGELOG](http://github.com/obranchr/cach_em_all/blob/master/CHANGELOG.md).
 
-### Resources
+#### Contributing
 
 To see how to contribute to this gem, please read [CONTRIBUTING](http://github.com/obranchr/cach_em_all/blob/master/CONTRIBUTING.md).
 
