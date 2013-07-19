@@ -8,6 +8,8 @@ Gem::Specification.new do |s|
   s.email       = ['oscaresgalha@gmail.com']
   s.homepage    = 'http://github.com/obranchr/cach_em_all'
   s.summary     = 'Fragment cache helpers for rails 4.'
+  s.description = "CachEmAll is a gem which aims to make the use of Rails 4's fragment caching even easier."
+  s.license     = 'MIT'
 
   s.files = Dir['lib/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir['spec/*.rb']
